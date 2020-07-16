@@ -1,1 +1,65 @@
-Hello World
+<!DOCTYPE html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        .main-section {
+            flex: 1;
+            min-height: 90vh;
+            text-align: right;
+            position: relative;
+        }
+
+        .main-section-title {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 92px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #intro {
+            background-color: #F6F6F6;
+        }
+
+        #design {
+            background-color: #FFF35D;
+
+        }
+
+        #development {
+            background-color: #0265B1;
+
+        }
+
+        #about {
+            background-color: #F6F6F6;
+
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div id="intro" class="main-section"></div>
+        <div id="design" class="main-section">
+            <div class="main-section-title">Design</div>
+        </div>
+        <div id="development" class="main-section">3</div>
+        <div id="about" class="main-section">4</div>
+    </div>
+</body>
