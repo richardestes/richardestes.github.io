@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 
 <head>
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <style>
         .flex-container {
@@ -10,6 +14,10 @@
             flex-direction: column;
             flex-wrap: wrap;
             align-items: stretch;
+        }
+
+        .navbar {
+            background: none;
         }
 
         .main-section {
@@ -54,12 +62,19 @@
 </head>
 
 <body>
+    <nav class="navbar fixed-top">
+        <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" loading="lazy">
+    </nav>
     <div class="flex-container">
         <div id="intro" class="main-section"></div>
         <div id="design" class="main-section">
             <div class="main-section-title">Design</div>
         </div>
-        <div id="development" class="main-section">3</div>
-        <div id="about" class="main-section">4</div>
+        <div id="development" class="main-section">
+            <div class="main-section-title">Development</div>
+        </div>
+        <div id="about" class="main-section">
+            <div class="main-section-title">About</div>
+        </div>
     </div>
 </body>
