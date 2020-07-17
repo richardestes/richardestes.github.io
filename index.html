@@ -23,7 +23,6 @@
         .main-section {
             flex: 1;
             min-height: 90vh;
-            text-align: right;
             position: relative;
         }
 
@@ -38,15 +37,26 @@
 
         #intro {
             background-color: #F6F6F6;
+            text-align: right;
+            justify-content: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
 
         #design {
             background-color: #FFF35D;
+            text-align: right;
+
 
         }
 
         #development {
             background-color: #0265B1;
+            text-align: right;
+
 
         }
 
@@ -58,15 +68,55 @@
         body {
             margin: 0;
         }
+
+        #intro-text {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intro-centered {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            color: #0265B1
+        }
+
+        .intro-centered-subtitle {
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            color: #0265B1
+        }
+
+        .nav-item {
+            padding: 20px;
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar fixed-top">
         <img src="assets/avataaars.png" width="50" height="50" alt="" loading="lazy">
+        <ul class="navbar-nav flex-row-reverse">
+            <li class="nav-item">
+                <a class="nav-link" href="design">Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="development">Development</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about">About</a>
+            </li>
+        </ul>
     </nav>
     <div class="flex-container">
-        <div id="intro" class="main-section"></div>
+        <div id="intro" class="main-section">
+            <div id="intro-text">
+                <p class="intro-centered">I'm Richard.</p>
+                <p class="intro-centered-subtitle">I'm a software developer<br>
+                    But i like design too</p>
+            </div>
+        </div>
         <div id="design" class="main-section">
             <div class="main-section-title">Design</div>
         </div>
