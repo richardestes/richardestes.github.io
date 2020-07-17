@@ -22,7 +22,7 @@
 
         .main-section {
             flex: 1;
-            min-height: 90vh;
+            min-height: 100vh;
             position: relative;
         }
 
@@ -33,12 +33,12 @@
             font-size: 80px;
             font-weight: bold;
             font-family: 'Roboto', sans-serif;
+            padding: 50px;
         }
 
         #intro {
             background-color: #F6F6F6;
             text-align: right;
-            justify-content: center;
             height: 100%;
             display: flex;
             align-items: center;
@@ -49,19 +49,20 @@
         #design {
             background-color: #FFF35D;
             text-align: right;
-
-
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         #development {
             background-color: #0265B1;
             text-align: right;
-
-
         }
 
         #about {
             background-color: #F6F6F6;
+            flex-direction: row;
 
         }
 
@@ -76,7 +77,7 @@
         }
 
         .intro-centered {
-            font-size: 80px;
+            font-size: 88px;
             font-weight: bold;
             font-family: 'Roboto', sans-serif;
             color: #0265B1
@@ -91,21 +92,92 @@
         .nav-item {
             padding: 20px;
         }
+
+        .design-text {
+            padding: 150px;
+        }
+
+        .design-centered {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            color: #434343
+        }
+
+        .design-centered-subtitle {
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            color: #434343
+        }
+
+        .nav-link {
+            color: #434343;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #current {
+            text-align: left;
+            justify-content: center;
+            align-items: center;
+            padding: 300px 100px;
+            color: #434343;
+            font-size: 44px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+
+        #current-subtitle {
+            text-align: left;
+            color: #434343;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal
+        }
+
+        #contact {
+            text-align: left;
+            justify-content: center;
+            align-items: center;
+            padding: 300px 100px;
+            color: #434343;
+            font-size: 44px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+
+        .contact-subtitle {
+            flex-direction: row;
+            text-align: left;
+            color: #434343;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            padding-right: 10px;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #0265B1;
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar fixed-top">
-        <img src="assets/avataaars.png" width="50" height="50" alt="" loading="lazy">
+        <a href="#intro">
+            <img src="assets/avataaars.png" width="90" height="90" alt="" loading="lazy">
+        </a>
         <ul class="navbar-nav flex-row-reverse">
+
             <li class="nav-item">
-                <a class="nav-link" href="design">Design</a>
+                <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="development">Development</a>
+                <a class="nav-link" href="#development">Development</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about">About</a>
+                <a class="nav-link" href="#design">Design</a>
             </li>
         </ul>
     </nav>
@@ -118,12 +190,43 @@
             </div>
         </div>
         <div id="design" class="main-section">
+            <div id="intro-text">
+                <p class="design-centered">Graphic Design ></p>
+                <p class="design-centered-subtitle">Flyers, logo design, animation.</p>
+            </div>
+            <div id="intro-text" class="design-text">
+                <p class="design-centered">Web Design ></p>
+                <p class="design-centered-subtitle">Website mockups, prototypes.</p>
+            </div>
+            <div id="intro-text">
+                <p class="design-centered">UI Design ></p>
+                <p class="design-centered-subtitle">Mobile UI.</p>
+            </div>
             <div class="main-section-title">Design</div>
         </div>
         <div id="development" class="main-section">
             <div class="main-section-title">Development</div>
         </div>
         <div id="about" class="main-section">
+            <div class="row">
+                <div id="current" class="col">
+                    <p>Currently,</p>
+                    <p id="current-subtitle">I’m a Software Engineer at Big Break Labs helping develop a food delivery
+                        platform using React
+                        Native. Strong focus on Front End Development such as Mobile App UX/UI design using Adobe XD.
+                        Back
+                        End Development utilizes AWS with Lamba (using Python).</p>
+                </div>
+                <div id="contact" class="col">
+                    <p>Contact</p>
+                    <div class="row">
+                        <a class="contact-subtitle col-sm" href="https://github.com/richardestes">GitHub</a>
+                        <a class="contact-subtitle col-sm"
+                            href="https://www.linkedin.com/in/richardaestes97/">LinkedIn</a>
+                        <a class="contact-subtitle col-sm" href="mailto:richard.estes48@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
             <div class="main-section-title">About</div>
         </div>
     </div>
